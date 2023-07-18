@@ -4,6 +4,7 @@
 
 - [김태진](https://github.com/kimtaejin3)
 - [김하영](https://github.com/hayoung1242433)
+- [임석준](https://github.com/SJvaca30)
 
 ## 🏃🏽‍♀️🏃‍♂️ kick off
 
