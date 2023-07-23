@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1주차</title>
+    <style>
+        
+        .card {
+            background-color: #98fff6;
+           color: transparent;
+          width: 300px;
+          height: 450px;
+         margin: 0 auto;
+          margin-top : 100px;
+          text-align: center;
+          align-items: center;
+         padding: 0;
+          box-sizing: border-box;
+         border-radius: 10px;
+         border : solid #D6A2E8;
+         box-shadow : 0.5px;
+            
+        }
+        .inside {
+           border :solid #D6A2E8;
+           background-color : #f6e58d;
+           object-fit : cover;
+           width : 100px;
+           height : 100px;
+           margin : 0 auto;
+           margin-top : 35px;
+           border-radius : 50%;
+            
+        }
+        
+       
+       
+        img {
+            width : 100%;
+            height : 100%;
+            border-radius : 50%;
+        }
+        p{  
+            border:  solid #D6A2E8;
+            background-color : #f7fcc1;
+            color : #9980FA;
+            width : 200px;
+            height : 160px;
+            margin : 0 auto;
+            margin-top : 10px;
+            font-style : italic;
+            border-radius : 10px;
+
+        }
+        .buttony{
+            border :solid #D6A2E8;
+            width: 100px;
+            color : white;
+            height : 40px;
+            margin-top : 20px;
+            background-color :#ffcced;
+            cursor : pointer;
+            border-radius : 10px;
+        }
+        #hy{
+            width : 150px;
+            height : 40px;
+            margin : 0 auto;
+            color : white;
+            display : block;
+            font-style : italic;
+
+        }
+    </style>
+</head>
+<body>
+  <div class ="card">
+    <div class ="inside">
+    <img src = "../images/시나모롤css2.png" alt = "시나모롤"></div>
+    <h2 id = "hy">CinnamoRoll</h2>
+    <p>
+     제가 가장 좋아하는 마이멜로디 캐릭터 시나모롤을 소개합니다. 
+    </p>
+    <button class = "buttony"> click </button> </div>
+    <script>
+    function addsquare () {
+        const newtag = document.createElement("div");
+        newtag.style.width = "400px";
+        newtag.style.height = "300px";
+        newtag.style.position = 'absolute';
+        newtag.style.top = '50%';
+        newtag.style.left = '50%';
+        newtag.style.transform = 'translate(-50%,-50%)';
+        newtag.style.backgroundColor = "mintcream";
+        newtag.style.border = "solid #D6A2E8";
+        document.body.appendChild(newtag);
+        console.log(newtag.firstChild);}
+        
+    const el = document.querySelector(".buttony");
+    el.addEventListener("click",addsquare); </script>
+    
+</body>
+</html>
