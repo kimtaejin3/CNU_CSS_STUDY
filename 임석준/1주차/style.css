@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box; 
+}
+
+main {
+    width: 380px;
+    border: 1px solid red ;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.3), /* 우측 하단 그림자 */
+    inset -1px -1px 3px rgba(0, 0, 0, 0.3), /* 좌측 상단 그림자 */
+    inset 1px -1px 3px rgba(0, 0, 0, 0.3), /* 우측 상단 그림자 */
+    inset -1px 1px 3px rgba(0, 0, 0, 0.3); /* 좌측 하단 그림자 */
+}
+
+.faceBackground {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 10px;
+    padding: 3px 0 0;
+    background-color: aqua;
+    border-radius: 50px;
+}
+
+.face {
+    width: 95px;
+    height: 95px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50px;
+    /* object-position: 0px 0px; */
+}
+
+.name {  /*얘는 block요소이지만, text가 들어있어서 가운데 정렬이 된다*/
+    /* width: 200px;
+    margin: 0 auto; */
+    font-size: 30px; 
+    text-decoration: underline ;
+    margin-bottom: 30px;
+}
+
+p { /*얘는 block요소이지만, text가 들어있어서 가운데 정렬이 된다*/
+    font-size: 5px;
+    margin-bottom: 30px;
+    /* overflow-wrap: break-word;  */
+}
+
+button { /*얘는 inline 요소*/ 
+    border: 1px solid blue;
+    border-radius: 7px;
+    background-color: blue;
+    color: white;
+    padding: 7px 20px 10px;
+    box-shadow: 1px 1px 3px black;
+
+}
+
+/* 1. 태그간 간격 설정하기
+2. p의 줄 바꿀 때 기준을 한 글자가 아닌 단어로 하기
+3. p의 줄 간격 조정 
+4. main 사각형에 그림자 및 음영 넣기*/
